@@ -1,4 +1,3 @@
 const numbers = ["Frodo","Gandalf","Turin","Sauron","Saruman","Bilbo"];
 
-// Put your code here
-
+console.log(numbers.slice(2,5));

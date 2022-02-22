@@ -1,12 +1,22 @@
 const mix = [undefined,22,"1",4,3,"5",7,NaN,8,"9","12",11,null];
-const strings = [];
-const numbers = []
+let strings = [];
+let numbers = [];
 
 for (let item of mix) {
-    if (typeof item === "Strings") {
-    } else {
-        (typeof item === "Numbers")
+    if (typeof item === "string") {
+        strings.push(item);
+    } else if (typeof item === "number") {
+        numbers.push(item);
     }
 }
+
+/*for (let idx = 0 ; idx < mix.length ; idx++) {
+    if (typeof mix[idx] === "string") {
+        strings.push(mix[idx]);
+    } else if (typeof mix[idx] === "number") {
+        numbers.push(mix[idx]);
+    }
+}*/
+
 
 console.log("Strings:",strings,"Numbers:",numbers)

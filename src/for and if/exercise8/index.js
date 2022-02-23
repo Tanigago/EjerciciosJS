@@ -1,7 +1,9 @@
-for (let outer = 0; outer < 2 ; outer++) {
-    for (let inner = 0; inner < 3; inner++ ){
-        console.log(`Outer: ${outer}, Inner: ${inner}`);
-    }
-}
 
-console.log()
+
+
+for (let outer = 1; outer < 10 ; outer++ ) {
+    for (let inner = 1; inner < 11; inner++ ){
+        console.log(inner + "x" + outer + " = " + inner * outer);
+    }
+    
+}

@@ -14,8 +14,3 @@ for (let currentPosition = 0; currentPosition < numbers.length ; currentPosition
         }
     }
 }
-
-
-
-
-/*console.log(`${numbers[currentPosition]} > ${numbers[compareWithPosition]}`)*/

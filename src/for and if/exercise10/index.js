@@ -1,9 +1,21 @@
 let numbers = [2,1,4,5,6,3,7,8,1,4,6,8,1,5,7,8,3]
-let idx = 0
+let temporal = null;
 
-for (let idx = 0; idx < numbers.length ; idx++) {
-    if (idx < idx++) {
-        console.log(numbers)
+for (let currentPosition = 0; currentPosition < numbers.length ; currentPosition++) {
+    for (let compareWithPosition = currentPosition+1;
+        compareWithPosition < numbers.length;
+        compareWithPosition++){      
+    
+        if (numbers[currentPosition] > numbers[compareWithPosition]) {
+            temporal = numbers[currentPosition];
+            numbers[currentPosition] = numbers[compareWithPosition];
+            numbers[compareWithPosition] = temporal;
+            console.log(numbers)
+        }
     }
 }
-/*Ni idea*/
+
+
+
+
+/*console.log(`${numbers[currentPosition]} > ${numbers[compareWithPosition]}`)*/

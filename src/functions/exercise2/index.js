@@ -1,4 +1,4 @@
-number = 0;
+let number = 0;
 
 function plusone(number) {
     number = number + 1;

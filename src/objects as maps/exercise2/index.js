@@ -24,3 +24,16 @@ const chrono = [
 // Put your code here
 
 console.log(JSON.stringify(chrono))
+
+/*
+class Runner{
+    constructor(name,time){
+        this.name = name
+        this.time = time
+    }
+}
+
+const Luisa = new Runner("Luisa",3.5);
+
+console.log(Luisa)
+*/

@@ -21,10 +21,27 @@ const chrono = [
     },
 ]
 
-// Put your code here
+chrono.sort(function (a, b) {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+  });
+  //Para ver la lista bonita :)
+function ordenarlista (chrono){
+    console.log (chrono.name, chrono.time);
+}
+chrono.forEach(ordenarlista);
 
+
+// Para ver la lista fea
+/*
 console.log(JSON.stringify(chrono))
+*/
 
+// ejemplo de ocmo crear un nuevo runner
 /*
 class Runner{
     constructor(name,time){

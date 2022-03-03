@@ -1,3 +1,28 @@
+
+// Put your code here
+
+console.log(power(25))
+console.log(power(8,1/3))
+console.log(power(2,3))
+console.log(power(5,2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SOLUCIONADO
 const number1 = (5**2);
 const number2 = (2**3);
 const number3 = (25**(1/2));
@@ -12,3 +37,4 @@ console.log(number1)
 console.log(number2)
 console.log(number3)
 console.log(number4)
+*/

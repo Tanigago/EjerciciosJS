@@ -11,7 +11,7 @@ for ( let idx = 0; idx < numbers.length; idx++ ) {
     console.log(numbers[idx]);
 }
 
-console.log("\nSwith array elements");
+console.log("\nSwicth array elements");
 const letters = ["a","b"];
 let temporal = null;
 temporal = letters[0];

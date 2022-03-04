@@ -1,8 +1,8 @@
 number = 0;
-
-function plusone(number) {
+ 
+function plusone(masuno) {
     number = number + 1;
-    return number;
+    return masuno;
 }
 
 plusone(number);

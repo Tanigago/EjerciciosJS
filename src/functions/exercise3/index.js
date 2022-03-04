@@ -1,5 +1,7 @@
 
-// Put your code here
+function power (a,b,c){
+    return Math.sqrt???;
+}
 
 console.log(power(25))
 console.log(power(8,1/3))

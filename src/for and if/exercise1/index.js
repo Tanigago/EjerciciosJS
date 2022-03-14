@@ -4,12 +4,17 @@ const even = []; //par
 
 for (let item of numbers) {
     console.log("item:", item);
+    if (item%2 === 0) {
+        even.push(item);
+    } else {
+        odd.push(item);
+    }
 
 
 }
 
-console.log("odd:", odd);
-console.log("even:", even);
+console.log("Impares:", odd);
+console.log("Pares:", even);
 
 
 

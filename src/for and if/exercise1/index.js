@@ -4,11 +4,7 @@ const even = []; //par
 
 for (let item of numbers) {
     console.log("item:", item);
-    if (item%2 === 0) {
-        odd.push(item);
-    } else { 
-        even.push(item);        
-    }
+
 
 }
 

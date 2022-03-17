@@ -21,7 +21,20 @@ const chrono = [
     },
 ]
 
-// Put you code here
+chrono.sort(function (a, b) {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+  });
+
+function ordenarlista (chrono){
+    console.log (chrono.name, chrono.time);
+}
+chrono.forEach(ordenarlista);
+
 
 
 

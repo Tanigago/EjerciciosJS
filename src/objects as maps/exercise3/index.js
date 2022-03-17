@@ -21,7 +21,35 @@ const people = [
     },
 ]
 
-// Your code here
+function aFasterThanB(a, b) {
+    return a > b
+}
 
-sort(aFasterThanB, numbers)
-sort(bFasterThanA, numbers)
+function bFasterThanA(a, b) {
+    return b > a
+}
+
+function swap(idxA, idxB, people) {
+    if (people[idxA] > people[idxB]) {
+        temp = people[idxA];
+        people[idxA] = people[idxB];
+        people[idxB] = temp;
+        console.log(people)
+    }
+}
+
+function sort(comparator, people) {
+    for (let currentIdx = 0; currentIdx < people.length - 1; currentIdx++) {
+        for (let nextIdx = currentIdx + 1; nextIdx < people.length; nextIdx++) {
+            if (
+                comparator(people[currentIdx], people[nextIdx])
+            ) swap(currentIdx, nextIdx, people)
+        }
+    }
+}
+
+sort(aFasterThanB, people);
+//console.log(people);
+console.log(JSON.stringify(people))
+//sort(bFasterThanA, people);
+//console.log(people);
